@@ -53,11 +53,3 @@ PLPstudy::execute_plp(
   databaseDescription = databaseDescription
 )
 
-# if you want to view the shiny app locally, uncomment the following section
-# CohortDiagnostics::createMergedResultsFile(
-#  dataFolder = outputFolder,
-#  sqliteDbPath = file.path(outputFolder,
-#                           "MergedCohortDiagnosticsData.sqlite")
-#)
-#CohortDiagnostics::launchDiagnosticsExplorer(dataFolder = outputFolder)
-
