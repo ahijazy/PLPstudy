@@ -41,7 +41,7 @@ options(sqlRenderTempEmulationSchema = NULL)
 
 #############################################################################
 #############################################################################
-PioneerMetastaticAE::execute(
+PLPstudy::execute_plp(
   connectionDetails = connectionDetails,
   cdmDatabaseSchema = cdmDatabaseSchema,
   cohortDatabaseSchema = cohortDatabaseSchema,
@@ -52,17 +52,6 @@ PioneerMetastaticAE::execute(
   databaseName = databaseName,
   databaseDescription = databaseDescription
 )
-
-
-# Execute the incidence rate analysis
-execute_IR  (connectionDetails=connectionDetails,
-                       cdmDatabaseSchema=cdmDatabaseSchema,
-                       cohortDatabaseSchema = cohortDatabaseSchema,
-                       cohortTable = cohortTable,
-                       tempEmulationSchema = getOption("sqlRenderTempEmulationSchema"),
-                       databaseId = databaseId,
-		       outputFolderIR=outputFolderIR
-                      ) 
 
 # if you want to view the shiny app locally, uncomment the following section
 # CohortDiagnostics::createMergedResultsFile(
