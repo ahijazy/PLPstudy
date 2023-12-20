@@ -46,7 +46,6 @@ PLPstudy::execute_plp(
   cdmDatabaseSchema = cdmDatabaseSchema,
   cohortDatabaseSchema = cohortDatabaseSchema,
   cohortTable = cohortTable,
-  verifyDependencies = TRUE,
   outputFolder = outputFolder,
   databaseId = databaseId,
   databaseName = databaseName,
