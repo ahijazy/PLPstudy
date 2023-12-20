@@ -1,5 +1,6 @@
 
-execute_plp=function(cdmDatabaseSchema=cdmDatabaseSchema,
+execute_plp=function(connectionDetails=connectionDetails,
+                    cdmDatabaseSchema=cdmDatabaseSchema,
                     vocabularyDatabaseSchema = cdmDatabaseSchema,
                     cohortDatabaseSchema = cohortDatabaseSchema,
                     cohortTable =  cohortTable,
