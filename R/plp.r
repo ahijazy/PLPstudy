@@ -113,7 +113,7 @@ preprocessSettings <- PatientLevelPrediction::createPreprocessSettings(
 # first model design #using AdaBoost
 model1=PatientLevelPrediction::createModelDesign(
     targetId  =1022,
-    outcomeId = 555, 
+    outcomeId = 777, 
     restrictPlpDataSettings = PatientLevelPrediction::createRestrictPlpDataSettings(),   
     populationSettings = populationSettings,
     covariateSettings =  covSet1, 
@@ -124,8 +124,8 @@ model1=PatientLevelPrediction::createModelDesign(
     splitSettings = splitSettings  )
 # second model desi
 model2=PatientLevelPrediction::createModelDesign(
-    targetId  =1022,
-    outcomeId = 555, 
+    targetId  =1040,
+    outcomeId = 777, 
     restrictPlpDataSettings = PatientLevelPrediction::createRestrictPlpDataSettings(), 
     populationSettings = populationSettings,
     covariateSettings =  covSet2, 
